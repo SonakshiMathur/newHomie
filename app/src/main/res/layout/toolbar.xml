@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2a9cc0"
+    local:titleTextColor="#fff"
+android:elevation="6dp"
+    local:theme="@style/Theme.AppCompat.DayNight"
+    local:title="@string/title_activity_user_dash_board" />

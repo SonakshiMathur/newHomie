@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@drawable/dash"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/card"
+            android:title="Payment Details" />
+        <item
+            android:id="@+id/nav_new"
+            android:icon="@drawable/loc"
+            android:title="Location Services" />
+        <item
+            android:id="@+id/nav_newMail"
+            android:icon="@drawable/newmail"
+            android:title="New" />
+        <item
+            android:id="@+id/nav_ongoing"
+            android:icon="@drawable/ongoing"
+            android:title="Ongoing" />
+        <item
+            android:id="@+id/nav_hired"
+            android:icon="@drawable/work"
+            android:title="Hired" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

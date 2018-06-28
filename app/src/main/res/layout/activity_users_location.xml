@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UsersLocation"
+    android:padding="10dp">
+
+
+    <!--<android.support.v7.widget.AppCompatButton-->
+        <!--android:id="@+id/User_detectloc"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#2A9CC0"-->
+        <!--android:text="Detect Location "-->
+        <!--android:textColor="@color/white" />-->
+
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Click to select Address" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray"
+        android:elevation="1dp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_below="@+id/place_autocomplete_fragment_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/gray"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="OR" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/User_addloc"
+        android:layout_below="@+id/textView8"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#2A9CC0"
+        android:text="Add Address"
+        android:textColor="@color/white" />
+
+
+
+    <ListView
+        android:layout_below="@+id/popcities"
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+    </ListView>
+
+    <TextView
+        android:id="@+id/popcities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/User_addloc"
+        android:layout_marginTop="20dp"
+        android:text="Popular Places"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/popcities"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray"
+        android:elevation="1dp" />
+
+
+
+</RelativeLayout>
